@@ -1,16 +1,32 @@
 import React from 'react';
 import { Container, Row } from 'react-bootstrap';
 import ReactDOM from 'react-dom/client';
-import App from './App';
-import AllProjects from './components/all_projects/allProjects';
-import AddLogForm from './components/add_long_log/AddLogForm';
-const root = ReactDOM.createRoot(document.getElementById('projectlogdiv'));
-root.render(
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-    <Container>
-        <App />
-        {/* <Row> */}
-        {/* </Row> */}
-    </Container>
+// Components
+import AllProjects from './components/all_projects/allProjects';
+import AllLogs from './components/all_logs/allLogs';
+import AddLogForm from './components/AddLogForm';
+import ShortLog from './components/shortLog';
+import TopBar from './components/TopBar';
+import NewProject from "./components/newProject";
+import App from './App';
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+        
+    <BrowserRouter>
+        <Routes>
+            <Route path="/" element={<App />} >
+                <Route index element={<AllProjects />} />
+                <Route path = "/project-logs" element = {<AllLogs />} />
+                <Route path="/add-long-log" element={<AddLogForm />} />
+                <Route path="/short-log" element={<ShortLog />} />
+                <Route path="/new-long-project" element = {<NewProject />} />
+            </Route >
+        </Routes>
+    </BrowserRouter>
 );
 
+    

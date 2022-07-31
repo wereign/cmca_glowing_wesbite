@@ -1,6 +1,6 @@
 import React from "react"
 import { Form, InputGroup, Row, Col, Button, Badge, Dropdown, DropdownButton } from 'react-bootstrap'
-
+import { Link } from "react-router-dom"
 export default function ShortLog() {
     return (
 
@@ -108,7 +108,7 @@ export default function ShortLog() {
                         <Col>
                             <Button variant="info" style={{ margin: "2%" }}>Upload Images</Button>
 
-                            <Button variant="success" style={{ margin: "2%" }}> Complete</Button>
+                            <Link  className="btn btn-success" role="button" to="/home"> Complete </Link>
                         </Col>
 
                     </Row>
