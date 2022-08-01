@@ -1,0 +1,74 @@
+
+/* configuring the topbar elements */
+
+.topbar{
+    position: relative;
+   margin-top: 0px;
+   background-color: #125B50;
+   height: 25%;
+}
+    .topbar-logo{
+        color: #F8B400;
+        margin-left: 2em;
+    }
+        .topbar-logo:hover{
+            color: #d19e13;
+        }
+    .account-button{
+        color: #F8B400;
+        margin-right: 5em;
+    }
+        .account-button-item{
+            color: #F8B400;
+            background-color: #125B50;
+        }
+            .account-button-item:hover{
+                background-color: #104e45;
+                color: #F8B400;
+            }
+    .new-project-toggle{
+        color: #F8B400;
+    }
+        .new-project-toggle:hover{
+            color: #F8B400;
+        }
+        .new-project-toggle:enabled{
+            color: #F8B400;
+            /* border: 0px; */
+    }
+    .new-project-toggle-menu{
+        background-color: #125B50;
+    }
+    .new-project-toggle-item{
+        color: #F8B400;
+    }
+        .new-project-toggle-item:hover{
+            background-color: #104e45;
+            color: #F8B400;
+        }
+
+/* configuring all projects window */
+
+.log-view{
+    background-color: #5aaa9a;
+    border-color: #4b9183;
+}
+    .log-view:hover{
+        background-color: #50998a;
+        border-color: #4b9183;
+    }
+.log-add{
+    background-color: #FF6363;
+    border-color: #ac4242;
+    color: #FAF5E4;
+}
+.log-add:disabled{
+    background-color: #FF6363;
+    border-color: #ac4242;
+    color: #FAF5E4;
+}
+.log-add:hover{
+    background-color: #ed5e5e;
+    border-color: #ac4242;
+    color: #FAF5E4;
+}
