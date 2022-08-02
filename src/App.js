@@ -1,15 +1,29 @@
-import React from "react";
-import { Outlet } from "react-router-dom";
-import TopBar from "./components/TopBar";
+import Home from "./pages/home/Home"
+import List from "./pages/list/List";
+import Login from "./pages/login/Login";
+import New from "./pages/new/New";
+import Single from "./pages/single/Single";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
 
-import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
-    <>
-      <TopBar />
-      {/* <NewProject /> */}
-      <Outlet />
-    </>    
+    <div className="App">
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home/> }></Route>
+            <Route path="login" element={<Login/> }></Route>
+            <Route path="users">
+              <Route index element={<List/>}></Route>
+              <Route path=":userId" element={<Single/>}></Route>
+              <Route path="new" element={<New/>}></Route>
+            </Route>
+          </Routes>
+        </BrowserRouter>
+    </div>
   );
 }
 
