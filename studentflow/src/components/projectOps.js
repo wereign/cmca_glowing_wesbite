@@ -14,13 +14,13 @@ export default function ProjectOps() {
 
                 <Col>
                     <Dropdown>
-                        <Dropdown.Toggle className='new-project-toggle' variant="default">
+                        <Dropdown.Toggle className='new-project-toggle, new-project-toggle-dark' variant="default">
                             New Project
                         </Dropdown.Toggle>
 
-                        <Dropdown.Menu className='new-project-toggle-menu'>
-                            <Dropdown.Item className='new-project-toggle-item' href="/short-log">Short</Dropdown.Item>
-                            <Dropdown.Item className='new-project-toggle-item' href="/new-long-project">Long</Dropdown.Item>
+                        <Dropdown.Menu className='new-project-toggle-menu, new-project-toggle-menu-dark'>
+                            <Dropdown.Item className='new-project-toggle-item, new-project-toggle-item-dark' href="/short-log">Short</Dropdown.Item>
+                            <Dropdown.Item className='new-project-toggle-item, new-project-toggle-item-dark' href="/new-long-project">Long</Dropdown.Item>
                         </Dropdown.Menu>
                     </Dropdown>
                 </Col>
