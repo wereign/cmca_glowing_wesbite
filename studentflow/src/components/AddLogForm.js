@@ -8,10 +8,11 @@ export default function AddLogForm() {
             <Row>
                 <Col>
                     <InputGroup className="mb-3">
-                        <InputGroup.Text id="inputGroup-sizing-default">
+                        <InputGroup.Text id="inputGroup-sizing-default" className='form-config-dark'>
                             Start Date
                         </InputGroup.Text>
                         <Form.Control
+                            className='form-input-dark'
                             type='date'
                             aria-label="Default"
                             aria-describedby="inputGroup-sizing-default" />
@@ -20,10 +21,11 @@ export default function AddLogForm() {
 
                 <Col>
                     <InputGroup className="mb-3">
-                        <InputGroup.Text id="inputGroup-sizing-default">
+                        <InputGroup.Text id="inputGroup-sizing-default" className='form-config-dark'>
                             End Date
                         </InputGroup.Text>
                         <Form.Control
+                            className='form-input-dark'
                             type='date'
                             aria-label="Default"
                             aria-describedby="inputGroup-sizing-default" />
@@ -37,8 +39,8 @@ export default function AddLogForm() {
                 <Col>
 
                     <Form.Group>
-                        <Form.Label>Work Done</Form.Label>
-                        <Form.Control type="text" as="textarea" style={{ height: '200px' }} />
+                        <Form.Label className='label-dark'>Work Done</Form.Label>
+                        <Form.Control className='form-input-dark' type="text" as="textarea" style={{ height: '200px' }} />
                     </Form.Group>
                 </Col>
             </Row>
@@ -46,13 +48,13 @@ export default function AddLogForm() {
             <Row style={{ padding: "2% 0" }}>
                 <Col sm={3}>
                     <h5>
-                        <Badge>Images Uploaded</Badge>
+                        <Badge className='badge-property-dark'>Images Uploaded</Badge>
                     </h5>
                 </Col>
 
                 <Col sm={9}>
                     <h5>
-                        <Badge variant="success">
+                        <Badge variant="success" className='badge-property-dark '>
                             img1 img2 img4
                         </Badge>
 
@@ -65,9 +67,9 @@ export default function AddLogForm() {
                 <Col>
                     <Row>
                         <Col>
-                            <Button variant="info" style={{margin:"2%"}}>Upload Images</Button>
+                            <Button className='upload-button-dark' variant="btn btn-outline-danger" style={{margin:"2%"}}>Upload Images</Button>
 
-                            <Button variant="success" style={{margin:"2%"}} href="project-logs"> Complete Log</Button>
+                            <Button className='complete-button-dark' variant="btn btn-outline-warning" style={{margin:"2%"}} href='/'> Complete Log</Button>
                         </Col>
 
                     </Row>

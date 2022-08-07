@@ -114,7 +114,7 @@ export default function ShortLog() {
                         <Col>
                             <Button className="upload-button-dark" variant="btn btn-outline-danger" style={{ margin: "2%" }}>Upload Images</Button>
 
-                            <Button className="complete-button-dark" variant="btn btn-outline-warning" style={{ margin: "2%" }}>Complete</Button>
+                            <Button className="complete-button-dark" variant="btn btn-outline-warning" style={{ margin: "2%" }} href='/'>Complete</Button>
                         </Col>
 
                     </Row>
