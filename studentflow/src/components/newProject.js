@@ -1,5 +1,8 @@
 // import './newProject.css';
 import { Table, Form, Row, Card, Button, Col, Container, InputGroup, Dropdown, DropdownButton } from 'react-bootstrap'
+import DropdownMenu from "react-bootstrap/esm/DropdownMenu";
+import DropdownToggle from "react-bootstrap/esm/DropdownToggle";
+import './components.css';
 
 export default function NewProject() {
     return (
@@ -8,15 +11,15 @@ export default function NewProject() {
             <Row>
 
                 <Card className="mb-3" style={
-                    { color: '#000' }
+                    { color: '#000' , backgroundColor: '#232320'}
                 }>
 
                     <Card.Img className="image-fluid" alt="CMCA LOGO HERE" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/close-up-of-cat-wearing-sunglasses-while-sitting-royalty-free-image-1571755145.jpg" />
                     <Card.Body>
-                        <Card.Title>
+                        <Card.Title className='label-dark'>
                             PROJECT DETAILS
                         </Card.Title>
-                        <Button variant="secondary" >help</Button>
+                        <Button variant="btn btn-danger" className='red-button, help-button' >help</Button>
                     </Card.Body>
                 </Card>
             </Row>
@@ -26,11 +29,11 @@ export default function NewProject() {
                 <Row>
                     <InputGroup className="mb-3">
                         <Col style={{ padding: "0 2% 0 0" }}>
-                            <InputGroup.Text id="inputGroup-sizing-default">Name</InputGroup.Text>
+                            <InputGroup.Text id="inputGroup-sizing-default" className="form-config-dark">Name</InputGroup.Text>
                         </Col>
 
                         <Col sm={9} style={{ padding: "0 0 0 2%" }}>
-                            <Form.Control type="text" />
+                            <Form.Control className="form-config-dark" type="text" />
                         </Col>
 
                     </InputGroup>
@@ -41,21 +44,19 @@ export default function NewProject() {
                 <Row>
                     <InputGroup className="mb-3">
                         <Col style={{ padding: "0 2% 0 0" }}>
-                            <InputGroup.Text id="inputGroup-sizing-default">Theme</InputGroup.Text>
+                            <InputGroup.Text id="inputGroup-sizing-default" className="form-config-dark">Theme</InputGroup.Text>
                         </Col>
 
                         <Col sm={9} style={{ padding: "0 0 0 2%" }}>
-                            <DropdownButton variant="dark" title="Choose category">
-
-                                <Dropdown.Item>Option 1</Dropdown.Item>
-                                <Dropdown.Item>Option 2</Dropdown.Item>
-                                <Dropdown.Item>Option 3</Dropdown.Item>
-                                <Dropdown.Item>Option 4</Dropdown.Item>
-
-
-
-
-                            </DropdownButton>
+                            <Dropdown>
+                                <DropdownToggle variant="dark" className='main-page-dropdown'>Choose category</DropdownToggle>
+                                <DropdownMenu>
+                                    <Dropdown.Item>Option 1</Dropdown.Item>
+                                    <Dropdown.Item>Option 2</Dropdown.Item>
+                                    <Dropdown.Item>Option 3</Dropdown.Item>
+                                    <Dropdown.Item>Option 4</Dropdown.Item>
+                                </DropdownMenu>
+                            </Dropdown>
                         </Col>
 
                     </InputGroup>
@@ -66,11 +67,11 @@ export default function NewProject() {
 
                     <InputGroup className="mb-3">
                         <Col style={{ padding: "0 2% 0 0" }}>
-                            <InputGroup.Text id="inputGroup-sizing-default">Team Members</InputGroup.Text>
+                            <InputGroup.Text id="inputGroup-sizing-default" className="form-config-dark">Team Members</InputGroup.Text>
                         </Col>
 
                         <Col sm={9} style={{ padding: "0 0 0 2%" }}>
-                            <Form.Control type="text" />
+                            <Form.Control className="form-config-dark" type="text" />
                         </Col>
 
                     </InputGroup>
@@ -80,16 +81,16 @@ export default function NewProject() {
                     <Col>
 
                         <Form.Group>
-                            <Form.Label>Work Done</Form.Label>
-                            <Form.Control type="text" as="textarea" style={{ height: '200px' }} />
+                            <Form.Label className='label-dark'>Work Done</Form.Label>
+                            <Form.Control className="form-config-dark" type="text" as="textarea" style={{ height: '200px' }} />
                         </Form.Group>
                     </Col>
                 </Row>
-
-                <Row>
-                    <Button variant = "btn btn-success" href = "/project-logs">Create Project</Button>
-                </Row>
-
+                <Col>
+                    {/* <Row> */}
+                        <Button variant = "btn btn-success" className='some-button' href = "/project-logs">Create Project</Button>
+                    {/* </Row> */}
+                </Col>
 
             </Form>
 

@@ -26,7 +26,7 @@ export default function ProjectRow({ name, duration, complete }) {
                 <Container>
                     <Row>
                         <Col>
-                            <Button className='log-view' variant="btn btn-primary" href="/project-logs">View Logs</Button>
+                            <Button className='view-log, view-log-dark' variant="btn btn-outline-success" href="/project-logs">View Logs</Button>
 
                         </Col>
                         <Col>
@@ -56,11 +56,11 @@ function displayStatus(complete) {
 function displayAddLog(complete) {
 
     if (complete) {
-        return <Button className='log-add' variant="primary" disabled>Add Logs</Button>
+        return <Button className='red-button, red-button-dark' variant="btn btn-outline-danger" disabled>Add Logs</Button>
     }
     
     else {
-        return <Button className='log-add' variant="primary" href="add-long-log">Add Logs</Button>
+        return <Button className='red-button, red-button-dark' variant='btn btn-outline-danger' href="/add-long- log">Add Logs</Button>
     }
 
 }

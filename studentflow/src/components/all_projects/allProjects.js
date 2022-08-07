@@ -2,12 +2,13 @@
 import React from 'react'
 import { Table } from 'react-bootstrap';
 import ProjectRow from './ProjectRow';
+import '../components.css'
 
 export default function AllProjects() {
     return (
         <div  style={{padding:"2%"}}>
-            <Table className='allProjects' responsive style={{ padding: "2%" }}>
-                <thead>
+            <Table className='allProjects, all-projects-dark' responsive style={{ padding: "2%" }}>
+                <thead className='all-projects-head-dark'>
                     <tr>
                         <th className='primary'>
                             Project
@@ -31,7 +32,7 @@ export default function AllProjects() {
                     </tr>
 
                     <tr>
-                        <ProjectRow name="Beach Cleanup" complete={true} duration="Set of Dates Here"></ProjectRow>
+                        <ProjectRow name="Beach Cleanup" complete={true} duration="Dates Here"></ProjectRow>
                     </tr>
 
                     <tr>
