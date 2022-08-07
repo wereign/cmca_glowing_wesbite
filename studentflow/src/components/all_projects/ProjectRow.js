@@ -60,7 +60,7 @@ function displayAddLog(complete) {
     }
     
     else {
-        return <Button className='red-button, red-button-dark' variant='btn btn-outline-danger' href="/add-long- log">Add Logs</Button>
+        return <Button className='red-button, red-button-dark' variant='btn btn-outline-danger' href="/add-long-log">Add Logs</Button>
     }
 
 }
