@@ -19,7 +19,7 @@ export default function NewProject() {
                         <Card.Title className='label-dark'>
                             PROJECT DETAILS
                         </Card.Title>
-                        <Button variant="btn btn-danger" className='red-button, help-button' >help</Button>
+                        <Button variant="btn btn-danger" className='red-button, help-button-dark' >help</Button>
                     </Card.Body>
                 </Card>
             </Row>
@@ -33,7 +33,7 @@ export default function NewProject() {
                         </Col>
 
                         <Col sm={9} style={{ padding: "0 0 0 2%" }}>
-                            <Form.Control className="form-config-dark" type="text" />
+                            <Form.Control className="form-input-dark" type="text" />
                         </Col>
 
                     </InputGroup>
@@ -49,12 +49,12 @@ export default function NewProject() {
 
                         <Col sm={9} style={{ padding: "0 0 0 2%" }}>
                             <Dropdown>
-                                <DropdownToggle variant="dark" className='main-page-dropdown'>Choose category</DropdownToggle>
-                                <DropdownMenu>
-                                    <Dropdown.Item>Option 1</Dropdown.Item>
-                                    <Dropdown.Item>Option 2</Dropdown.Item>
-                                    <Dropdown.Item>Option 3</Dropdown.Item>
-                                    <Dropdown.Item>Option 4</Dropdown.Item>
+                                <DropdownToggle variant="dark" className='main-page-dropdown, main-page-dropdown-dark'>Choose category</DropdownToggle>
+                                <DropdownMenu className='main-page-dropdown-menu-dark'>
+                                    <Dropdown.Item className='main-page-dropdown-item-dark'>Seminar/Talk</Dropdown.Item>
+                                    <Dropdown.Item className='main-page-dropdown-item-dark'>Awareness Campaign</Dropdown.Item>
+                                    <Dropdown.Item className='main-page-dropdown-item-dark'>Cleanliness Drive</Dropdown.Item>
+                                    <Dropdown.Item className='main-page-dropdown-item-dark'>Tree Plantation Drive</Dropdown.Item>
                                 </DropdownMenu>
                             </Dropdown>
                         </Col>
@@ -71,7 +71,7 @@ export default function NewProject() {
                         </Col>
 
                         <Col sm={9} style={{ padding: "0 0 0 2%" }}>
-                            <Form.Control className="form-config-dark" type="text" />
+                            <Form.Control className="form-input-dark" type="text" />
                         </Col>
 
                     </InputGroup>
@@ -82,13 +82,13 @@ export default function NewProject() {
 
                         <Form.Group>
                             <Form.Label className='label-dark'>Work Done</Form.Label>
-                            <Form.Control className="form-config-dark" type="text" as="textarea" style={{ height: '200px' }} />
+                            <Form.Control className="form-input-dark" type="text" as="textarea" style={{ height: '200px' }} />
                         </Form.Group>
                     </Col>
                 </Row>
                 <Col>
                     {/* <Row> */}
-                        <Button variant = "btn btn-success" className='some-button' href = "/project-logs">Create Project</Button>
+                        <Button style={{marginLeft:'33em'}} variant = "btn btn-outline-warning" className='complete-button, complete-button-dark' href = "/project-logs">Create Project</Button>
                     {/* </Row> */}
                 </Col>
 
