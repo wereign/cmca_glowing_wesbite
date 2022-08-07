@@ -20,13 +20,16 @@ export default function AllLogs() {
                                 <th>
                                     Operation
                                 </th>
+                                <th>
+                                    Delete
+                                </th>
                             </tr>
 
                         </thead>
 
                         <tbody>
                             <tr>
-                                <ProjectRow name="Week 1" duration="Dates Here"></ProjectRow>
+                                <ProjectRow name="Week 1" duration="Dates Here" delete="delete" deleteButton="delete"></ProjectRow>
                             </tr>
 
                             <tr>
@@ -36,8 +39,6 @@ export default function AllLogs() {
                             <tr>
                                 <ProjectRow name="Week 3" complete={false} duration="Dates Here"></ProjectRow>
                             </tr>
-
-
 
                         </tbody>
 
