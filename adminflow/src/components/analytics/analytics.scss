@@ -1,13 +1,16 @@
 .analytics {
     flex: 4;
-    -webkit-box-shadow: 2px 4px 10px 1px rgba(0,0,0,0.47);
-    -moz-box-shadow: 2px 4px 10px 1px rgba(0,0,0,0.47);
-    box-shadow: 2px 4px 10px 1px rgba(201,201,201,201.47);
+    -webkit-box-shadow: 2px 4px 10px 1px rgb(0, 0, 0);
+    -moz-box-shadow: 2px 4px 10px 1px rgb(0, 0, 0);
+    box-shadow: 2px 4px 10px 1px rgba(0,0,0,0);
     padding: 10px;
+    background-color: rgb(32,32,32);
+    border-radius: 5px;
 
     .title {
         font-size: 30px;
         font-weight: 500;
         margin-bottom: 20px;
+        color: #FAA61A;
     }
 }

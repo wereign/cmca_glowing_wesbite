@@ -8,6 +8,9 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import Projects from "./pages/projects/Projects";
+import Announcements from "./pages/Announcements/Announcements";
+import Analysis from "./pages/Analysis/Analysis";
 
 function App() {
   return (
@@ -21,6 +24,9 @@ function App() {
               <Route path=":userId" element={<Single/>}></Route>
               <Route path="new" element={<New/>}></Route>
             </Route>
+            <Route path="projects" element={<Projects/>}></Route>
+            <Route path="announcements" element={<Announcements/>}></Route>
+            <Route path="analysis" element={<Analysis/>}></Route>
           </Routes>
         </BrowserRouter>
     </div>

@@ -9,24 +9,29 @@ import BadgeIcon from '@mui/icons-material/Badge';
 import CampaignIcon from '@mui/icons-material/Campaign';
 import SettingsIcon from '@mui/icons-material/Settings';
 import LogoutIcon from '@mui/icons-material/Logout';
+import {Link} from "react-router-dom";
 
 const Sidebar = () => {
   return (
     <div className="sidebar">
         <div className="top">
-            <span className="logo">Dash</span>
+            <span className="logo">CMCA ADMIN</span>
         </div>
         <hr/>
         <div className="center">
             <ul>
                 <li>
-                    <HomeIcon className="icon"/>
-                    <span>Home</span>
+                    <Link to="/">
+                        <HomeIcon className="icon"/>
+                        <span>Home</span>
+                    </Link>
                 </li>
                 <p className="title">Projects</p>
                 <li>
-                    <FolderOpenIcon className="icon"/>
-                    <span>All</span>
+                    <Link to="projects">
+                        <FolderOpenIcon className="icon"/>
+                        <span>All</span>
+                    </Link>
                 </li>
                 <li>
                     <PendingIcon className="icon"/>
@@ -38,22 +43,30 @@ const Sidebar = () => {
                 </li>
                 <p className="title">Services</p>
                 <li>
-                    <SignalCellularAltIcon className="icon"/>
-                    <span>Analytics</span>
+                    <Link to="analysis">
+                        <SignalCellularAltIcon className="icon"/>
+                        <span>Analytics</span>
+                    </Link>
                 </li>
                 <p className="title">Profiles</p>
                 <li>
-                    <PersonIcon className="icon"/>
-                    <span>Users</span>
+                    <Link to="users">
+                        <PersonIcon className="icon"/>
+                        <span>Users</span>
+                    </Link>
                 </li>
                 <li>
-                    <BadgeIcon className="icon"/>
-                    <span>Employees</span>
+                    <Link to="users">
+                        <BadgeIcon className="icon"/>
+                        <span>Employees</span>
+                    </Link>
                 </li>
                 <p className="title">Alerts</p>
                 <li>
-                    <CampaignIcon className="icon"/>
-                    <span>Announcements</span>
+                    <Link to="announcements">
+                        <CampaignIcon className="icon"/>
+                        <span>Announcements</span>
+                    </Link>
                 </li>
                 <p className="title">Tools</p>
                 <li>
@@ -62,8 +75,8 @@ const Sidebar = () => {
                 </li>
                 <hr className="line" /> 
                 <li>
-                    <LogoutIcon className="icon"/>
-                    <span>Log out</span>
+                    <LogoutIcon className="icon-out"/>
+                    <span className="out">Log out</span>
                 </li>
             </ul>
         </div>

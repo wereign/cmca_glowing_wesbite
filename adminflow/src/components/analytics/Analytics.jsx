@@ -46,13 +46,13 @@ const data = [
     },
   ];
 
-const Analytics = () => {
+const Analytics = ({aspect}) => {
   return (
     <div className="analytics">
         <div className="title">
             Anaytics
         </div>
-        <ResponsiveContainer width="100%" aspect={2/1}>
+        <ResponsiveContainer width="100%" aspect={aspect}>
         <AreaChart
           width={500}
           height={400}

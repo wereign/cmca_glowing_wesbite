@@ -35,11 +35,11 @@ const Announcement = () => {
         <div className="bottom">
             <div className="list-container">
             <TableContainer component={Paper}>
-                <Table sx={{ minWidth: 650 }} aria-label="simple table">
+                <Table sx={{ minWidth: 650 }} aria-label="simple table" className="tablelol">
                     <TableHead>
                         <TableRow>
-                            <TableCell>Date</TableCell>
-                            <TableCell align="right">Announcement</TableCell>
+                            <TableCell><span>Date</span></TableCell>
+                            <TableCell align="right"><span>Announcement</span></TableCell>
                     </TableRow>
                     </TableHead>
                     <TableBody>
@@ -47,10 +47,10 @@ const Announcement = () => {
                     <TableRow
                         key={row.date}
                         sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
-                        <TableCell component="th" scope="row">
-                            {row.date}
+                        <TableCell component="th" scope="row" className="cell-date">
+                            {row.date} 
                         </TableCell>
-                        <TableCell align="right">
+                        <TableCell align="right" className="cell-content">
                             {row.content}
                         </TableCell>
                     </TableRow>

@@ -1,20 +1,20 @@
-import "./list.scss"
+import "./projects.scss"
 import Sidebar from "../../components/sidebar/Sidebar"
 import Navbar from "../../components/navbar/Navbar"
-import UserList from "../../components/user-list/UserList"
+import Datatable from "../../components/datatable/Datatable"
 
-const List = () => {
+const Projects = () => {
     return(
-        <div className="list">
+        <div className="projects">
             <Sidebar/>
-            <div className="list-container">
+            <div className="project-container">
                 <Navbar/>
                 <div className="lol">
-                    <UserList className="table"/>
+                    <Datatable className="table"/>
                 </div>
             </div>
         </div>
     )
 }
 
-export default List
+export default Projects

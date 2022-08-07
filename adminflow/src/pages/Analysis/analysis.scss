@@ -1,0 +1,27 @@
+.analysis {
+    display: flex;
+    width: 100%;
+
+    .analysis-container {
+        flex: 6;
+        background-color: black;
+
+        .table {
+            margin-left: 10%;
+            margin-top: 2%;
+            border: 1px solid #FAA61A;
+            border-radius: 5px;
+        }
+
+        .img {
+            margin: 20px;
+            height: 350px;
+        }
+
+        .second-img {
+            margin: 20px;
+            height: 350px;
+            border: 1px solid white;
+        }
+    }
+}
