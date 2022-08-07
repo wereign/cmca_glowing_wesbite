@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import {Button} from 'react-bootstrap';
 
 export default function LogRow({ name, duration, complete }) {
     return (
@@ -13,7 +14,7 @@ export default function LogRow({ name, duration, complete }) {
             </td>
 
             <td>
-            <Link className="btn btn-outline-dark" role="button" to="#"> View Log </Link>
+            <Button className="view-log, view-log-dark" variant='btn btn-outline-success'> View Log </Button>
             </td>
 
         </>

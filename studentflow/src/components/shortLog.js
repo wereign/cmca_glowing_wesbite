@@ -17,7 +17,7 @@ export default function ShortLog() {
                     </Col>
 
                     <Col sm={9} style={{ padding: "0 0 0 2%" }}>
-                        <Form.Control type="text" className='form-config-dark' />
+                        <Form.Control type="text" className='form-input-dark' />
                     </Col>
 
                 </InputGroup>
@@ -35,11 +35,11 @@ export default function ShortLog() {
                         <Dropdown>
                             <DropdownToggle variant='dark' className='main-page-dropdown, main-page-dropdown-dark'>Choose category</DropdownToggle>
                             
-                            <DropdownMenu>
-                                <Dropdown.Item>Option 1</Dropdown.Item>
-                                <Dropdown.Item>Option 2</Dropdown.Item>
-                                <Dropdown.Item>Option 3</Dropdown.Item>
-                                <Dropdown.Item>Option 4</Dropdown.Item>
+                            <DropdownMenu className="main-page-dropdown-menu-dark">
+                                <Dropdown.Item className="main-page-dropdown-item-dark">Seminar/Talk</Dropdown.Item>
+                                <Dropdown.Item className='main-page-dropdown-item-dark'>Awareness Campaign</Dropdown.Item>
+                                <Dropdown.Item className='main-page-dropdown-item-dark'>Cleanliness Drive</Dropdown.Item>
+                                <Dropdown.Item className='main-page-dropdown-item-dark'>Tree Plantation Drive</Dropdown.Item>
                             </DropdownMenu>
                             
                         </Dropdown>
@@ -57,7 +57,7 @@ export default function ShortLog() {
                             Start Date
                         </InputGroup.Text>
                         <Form.Control
-                            className="form-config-dark"
+                            className="form-input-dark"
                             type='date'
                             aria-label="Default"
                             aria-describedby="inputGroup-sizing-default" />
@@ -70,7 +70,7 @@ export default function ShortLog() {
                             End Date
                         </InputGroup.Text>
                         <Form.Control
-                            className="form-config-dark"
+                            className="form-input-dark"
                             type='date'
                             aria-label="Default"
                             aria-describedby="inputGroup-sizing-default" />
@@ -85,7 +85,7 @@ export default function ShortLog() {
 
                     <Form.Group>
                         <Form.Label>Work Done</Form.Label>
-                        <Form.Control className="form-config-dark" type="text" as="textarea" style={{ height: '200px' }} />
+                        <Form.Control className="form-input-dark" type="text" as="textarea" style={{ height: '200px' }} />
                     </Form.Group>
                 </Col>
             </Row>
@@ -93,13 +93,13 @@ export default function ShortLog() {
             <Row style={{ padding: "2% 0" }}>
                 <Col sm={3}>
                     <h5>
-                        <Badge className="badge-property">Images Uploaded</Badge>
+                        <Badge className="badge-property, badge-property-dark">Images Uploaded</Badge>
                     </h5>
                 </Col>
 
                 <Col sm={9}>
                     <h5>
-                        <Badge variant="success" className="badge-property">
+                        <Badge variant="success" className="badge-property, badge-property-dark">
                             img1 img2 img4
                         </Badge>
 
@@ -112,9 +112,9 @@ export default function ShortLog() {
                 <Col>
                     <Row>
                         <Col>
-                            <Button variant="info" style={{ margin: "2%" }}>Upload Images</Button>
+                            <Button className="upload-button-dark" variant="btn btn-outline-danger" style={{ margin: "2%" }}>Upload Images</Button>
 
-                            <Link  className="btn btn-success" role="button" to="/"> Complete </Link>
+                            <Button className="complete-button-dark" variant="btn btn-outline-warning" style={{ margin: "2%" }}>Complete</Button>
                         </Col>
 
                     </Row>

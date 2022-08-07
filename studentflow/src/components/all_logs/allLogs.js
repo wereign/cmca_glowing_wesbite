@@ -8,8 +8,8 @@ export default function AllLogs() {
             <Row>
                 <div style={{ padding: "2%" }}>
 
-                    <Table className='allProjects' responsive style={{ padding: "2%" }}>
-                        <thead>
+                    <Table className='allProjects, all-projects-dark' responsive style={{ padding: "2%" }}>
+                        <thead className='all-projects-head-dark'>
                             <tr>
                                 <th className='primary'>
                                     Log
@@ -53,13 +53,13 @@ export default function AllLogs() {
                 <Col>
                     <Row>
                         <Col>
-                            <Button variant="btn btn-outline-primary" href="/add-long-log">Add Log</Button>
+                            <Button variant="btn btn-outline-primary" className='add-log-ap-dark' href="/add-long-log">Add Log</Button>
                         </Col>
                         <Col>
-                            <Button variant="btn btn-outline-danger">Delete Log</Button>
+                            <Button variant="btn btn-outline-danger" className='red-button, red-button-dark'>Delete Log</Button>
                         </Col>
                         <Col>
-                            <Button variant="btn btn-outline-success" href="/">Complete Project</Button>
+                            <Button variant="btn btn-outline-success" className='complete-button, complete-button-dark' href="/">Complete Project</Button>
                         </Col>
 
                     </Row>
