@@ -1,0 +1,20 @@
+.list {
+    display: flex;
+    width: 100%;
+
+    .list-container {
+        background-color: black;
+        flex: 6;
+
+        .lol {
+            background-color: black;
+            padding: 2%;
+
+            .table {
+                background-color: black;
+                border: 1px solid #faa81ac4;
+                border-radius: 1%;
+            }
+        }
+    }
+}

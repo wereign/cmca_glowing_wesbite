@@ -1,0 +1,23 @@
+.home {
+    display: flex;
+
+    .homeContainer {
+        flex: 7;
+        background-color: black;
+
+        .widgets, .cards {
+            display: flex;
+            padding: 1%;
+            gap: 1%;
+        }
+
+        .cards {
+            padding: 1% 0.5%;
+
+            // .graph{
+            //     width: 75px;
+            //     // height: max-content?;
+            // }
+        }
+    }
+}

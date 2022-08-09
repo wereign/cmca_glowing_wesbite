@@ -1,0 +1,336 @@
+/* THIS IS THE LIGHT MODE'S STYLING */
+
+/* configuring the topbar elements */
+
+.topbar{
+    position: relative;
+   /* margin-top: 0px; */
+   /* alternate colour:#26AAA5 */
+   background-color: #125B50;
+   height: 5em;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+/* CMCA logo */
+.topbar-logo{
+    color: #F8B400;
+    margin-left: 2em;
+}
+    .topbar-logo:hover{
+        color: #d19e13;
+    }
+
+/* account menu to the right */
+.account-button{
+    color: #F8B400;
+    margin-right: 5em;
+    border: none;
+}
+    .account-button:hover{
+        border: none;
+        color: #F8B400;
+    }
+.account-button:focus{
+    color: #F8B400;
+}
+.account-button-menu{
+    background-color: #125B50;
+}
+.account-button-item{
+    color: #F8B400;
+    /* background-color: #125B50; */
+}
+    .account-button-item:hover{
+        background-color: #104e45;
+        color: #F8B400;
+    }
+/* new project button adjacent to CMCA logo */
+.new-project-toggle{
+    color: #F8B400;
+    border: none;
+}
+    .new-project-toggle:hover{
+        color: #F8B400;
+    }
+    .new-project-toggle:focus{
+        color: #F8B400;
+}
+.new-project-toggle-menu{
+    background-color: #125B50;
+}
+.new-project-toggle-item{
+    color: #F8B400;
+}
+    .new-project-toggle-item:hover{
+        background-color: #104e45;
+        color: #F8B400;
+    }
+
+/* configuring all projects window */
+
+/* view button config. */
+.view-log{
+    background-color: #5aaa9a;
+    border-color: #4b9183;
+}
+    .view-log:hover{
+        background-color: #50998a;
+        border-color: #4b9183;
+    }
+    .view-log:active{
+        box-shadow: #4b9183;
+    }
+
+/* add button config.*/
+.red-button{
+    background-color: #FF6363;
+    border-color: #ac4242;
+    color: #FAF5E4;
+}
+    .red-button:disabled{
+        background-color: #FF6363;
+        border-color: #ac4242;
+        color: #FAF5E4;
+    }
+    .red-button:hover{
+        background-color: #ed5e5e;
+        border-color: #ac4242;
+        color: #FAF5E4;
+    }
+
+/* configuring elements on short log */
+
+.main-page-dropdown{
+    background-color: rgba(0,0,0,0);
+    border-color: #000;
+    color: #000;
+}
+    .main-page-dropdown:hover{
+        background-color: rgba(0,0,0,0);
+        border-color: #000;
+        color: #000;
+    }
+    .main-page-dropdown:enabled{
+        background-color: rgba(0,0,0,0);
+        border-color: #000;
+        color: #000;
+        box-shadow: inset none;
+    }
+.badge-property{
+    background-color: #e4ddc9!important;
+    color:black;
+}
+.complete-button{
+    margin-left: 33em;
+    width: 10em;
+    text-align:center;
+}
+.help-button{
+    margin-left: 96.7%;
+}
+
+
+
+/* THIS IS THE DARK MODE'S STYLING */
+
+
+
+/* configuring the topbar elements */
+
+
+.dark_topbar{
+    background-color: rgb(15, 15, 15);
+}
+
+/* new project button adjacent to CMCA logo */
+
+.new-project-toggle-dark{
+    color: #F8B400;
+    border: none;
+}
+    .new-project-toggle-dark:hover{
+        color: #F8B400;
+    }
+    .new-project-toggle-dark:focus{
+        color: #F8B400;
+}
+.new-project-toggle-menu-dark{
+    background-color: #0f0f0f;
+}
+.new-project-toggle-item-dark{
+    color: #F8B400;
+}
+    .new-project-toggle-item-dark:hover{
+        background-color: #171616;
+        color: #F8B400;
+    }
+
+/* account button the extreme right */
+
+.account-button-menu-dark{
+    background-color: #0f0f0f;
+}
+.account-button-item-dark{
+    color: #F8B400;
+}
+    .account-button-item-dark:hover{
+        background-color: #171616;
+        color: #F8B400;
+    }
+
+/* configuring main page */
+
+
+.all-projects-dark{
+    color: #f0e9d2;
+}
+.all-projects-head-dark{
+    color: #EE5007;
+    font-size:1.5em;
+}
+.view-log-dark{
+    color: #5aaa9a;
+}
+    .view-log-dark:hover{
+        color: #5aaa9a;
+        background-color: #151513;
+        box-shadow: 1px 1px ;
+        text-shadow: 0.5px 0.5px;
+    }
+.red-button-dark{
+    color: #FF6363;
+}
+    .red-button-dark:disabled{
+        color: #FF6363;
+    }
+    .red-button-dark:hover{
+        background-color: rgb(0,0,0,0);
+        color: #FF6363;
+        box-shadow: 1px 1px ;
+        text-shadow: 0.5px 0.5px;
+    }
+
+/* FORM INPUTS CONFIGURATIONS */
+
+.form-config-dark{
+    background-color: #232320;
+    color:#b5b5b5;
+    border-color: #b5b5b5;
+}
+.form-input-dark{
+    background-color: #232320;
+    color:#b5b5b5;
+    border-color: #b5b5b5;
+}
+    .form-input-dark:hover{
+        background-color: #232320;
+        color:#b5b5b5;
+        border-color: #b5b5b5;
+        box-shadow: 1px 1px;
+    }
+    .form-input-dark:active{
+        background-color: #232320;
+        color:#b5b5b5;
+        border-color: #b5b5b5;
+        box-shadow: none;
+    }
+    .form-input-dark:focus{
+        background-color: #232320;
+        color:#b5b5b5;
+        border-color: #b5b5b5;
+        box-shadow: none;
+    }
+.label-dark{
+    color: #b5b5b5;
+}
+.main-page-dropdown-dark{
+    border-color:#b5b5b5 ;
+    color: #b5b5b5;
+    background-color: rgb(0,0,0,0);
+}
+    .main-page-dropdown-dark:hover{
+        border: color #b5b5b5; ;
+        color: #b5b5b5;
+        background-color: rgb(0,0,0,0);
+        box-shadow: 1px 1px;
+    }
+    .main-page-dropdown-dark:enabled{
+        border-color:#b5b5b5 ;
+        color: #b5b5b5;
+        background-color: rgb(0,0,0,0);
+    }
+.main-page-dropdown-menu-dark{
+    background-color: #232320;
+    border-color: #7c7c7b;
+}
+.main-page-dropdown-item-dark{
+    color: #b5b5b5;
+}
+    .main-page-dropdown-item-dark:hover{
+        background-color: #1a1a18;
+        color: #b5b5b5;
+    }
+.badge-property-dark{
+    background-color: #B22727!important;
+}
+.upload-button-dark {
+    border-color: #DF7861;
+    background-color: rgb(0,0,0,0);
+    color: #DF7861;
+}
+    .upload-button-dark:hover {
+        border-color: #DF7861;
+        background-color: rgb(0,0,0,0);
+        color: #DF7861;
+        box-shadow: 0.5px 0.5px;
+        text-shadow: 0.5px 0.5px;
+    }
+    .upload-button-dark:focus {
+        border-color: #DF7861;
+        background-color: rgb(0,0,0,0);
+        color: #DF7861;
+        box-shadow: 0.5px 0.5px;
+    }
+.complete-button-dark{
+    background-color: rgb(0,0,0,0);
+    color: #F8B400;
+    border-color: #F8B400;
+}
+    .complete-button-dark:hover{
+        background-color: rgb(0,0,0,0);
+        color: #F8B400;
+        border-color: #F8B400;
+        box-shadow: 0.5px 0.5px;
+        text-shadow: 0.5px 0.5px;
+    }
+    .complete-button-dark:focus{
+        background-color: rgb(0,0,0,0);
+        color: #F8B400;
+        border-color: #F8B400;
+        box-shadow: 0.5px 0.5px;
+    }
+.help-button-dark{
+    background-color: rgb(0,0,0,0);
+    border-color: #ac4242;
+    color: #ac4242;
+    margin-left: 95%;
+}
+    .help-button-dark:hover{
+        background-color: rgb(0,0,0,0);
+        border-color: #ac4242;
+        color: #ac4242;
+        box-shadow: 1px 1px;
+        text-shadow: 0.5px 0.5px;
+        margin-left: 95%;
+    }
+.add-log-ap-dark{
+    background-color: rgb(0,0,0,0);
+    border-color: #3B9AE1;
+    color: #3B9AE1;
+}
+    .add-log-ap-dark:hover{
+        background-color: rgb(0,0,0,0);
+        border-color: #3B9AE1;
+        color: #3B9AE1;
+        box-shadow: 1px 1px;
+        text-shadow: 0.5px 0.5px;
+    }

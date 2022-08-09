@@ -1,0 +1,31 @@
+.userList {
+    display: flex;
+    background-color: black!important;
+
+    .table {
+        background-color: rgb(32,32,32);
+
+        .heading {
+            font-weight: bold;
+            color: rgb(165, 165, 165);
+        }
+
+        .content {
+            color: rgb(145,145,145);
+
+            .viewbut{
+                background-color: black;
+                border-color: aqua;
+                color: aqua;
+                text-decoration: none;
+
+                &:hover{
+                    background-color: aqua;
+                    border-color: black;
+                    color: black;
+                    
+                }
+            }
+        }
+    }
+}
